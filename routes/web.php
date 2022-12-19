@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::redirect('/', '/layout-top-layout');
+Route::redirect('/', '/layout-top-navigation');
 
 // Dashboard
 Route::get('/dashboard-general-dashboard', function () {
@@ -28,7 +28,7 @@ Route::get('/dashboard-ecommerce-dashboard', function () {
 Route::get('/layout-default-layout', function () {
     return view('pages.layout-default-layout', ['type_menu' => 'layout']);
 });
-Route::get('/layout-top-layout', function () {
+Route::get('/layout-top-navigation', function () {
     return view('pages.layout-top-layout', ['type_menu' => 'top-layout']);
 });
 
